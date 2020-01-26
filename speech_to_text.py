@@ -1,3 +1,6 @@
+import sys
+import os
+import subprocess
 from pynput.keyboard import Key, Controller
 
 # will probably be replaced by microft
@@ -5,6 +8,7 @@ import speech_recognition as sr
 #####
 
 import time
+
 
 def send_keystrokes_to_document(voice_input):
     keyboard = Controller()
@@ -49,12 +53,41 @@ def recognize_my_voice(language_choice):
 def selection_menu():
     return "\nWhich language would you like to test?\n'0' = Python 3(Not yet implemented\n'1' = C++(Not yet implemented)\n"
 
-def main():
-    selection = input(selection_menu())
+
+def open_editor(editor_choice, file_or_folder):
     try:
-        recognize_my_voice(selection)
-    except:
-        selection = input("Please try again" + selection_menu())
+        if file_or_folder != "" or file_or_folder != None:
+            file_or_folder = '.'
+        # subprocess.Popen([editor_choice, file_or_folder])
+        return True
+    except Exception as e:
+        print(str(e))
+        return False
+
+def main(argv):
+
+    editor_choice = "vim"
+    file_or_folder = 'test.txt'
+
+    # editor input to open the editor
+    if len(argv) > 1:
+        editor_choice = argv[1]
+        if len(argv) > 2:
+            file_or_folder = argv[2]
+
+    # selection = input(selection_menu()) # need to make this voice activated
+    selection = 0
+
+    # if the editor opens
+    if open_editor(editor_choice, file_or_folder):
+
+        try:
+            recognize_my_voice(selection)
+        except:
+            selection = input("Please try again" + selection_menu())
+    else:
+        print("Could not open that editor... Sorry ")
+
 
 if __name__ == '__main__':
-    main()
+    main(sys.argv)
