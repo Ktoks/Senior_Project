@@ -66,7 +66,7 @@ def open_editor(editor_choice, file_or_folder):
 
 def main(argv):
 
-    editor_choice = "vim"
+    editor_choice = "code"
     file_or_folder = 'test.txt'
 
     # editor input to open the editor
