@@ -110,5 +110,5 @@ def main(argv):
             print("Could not open that editor... Sorry ")
 
 
-# if __name__ == '__main__':
-#     main(sys.argv)
+if __name__ == '__main__':
+    main(sys.argv)
