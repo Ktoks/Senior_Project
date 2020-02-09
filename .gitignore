@@ -2,3 +2,7 @@ test.py
 zion_project/
 pictures/
 idea.pdf
+__pycache__/
+docs/
+backup/
+notes/
