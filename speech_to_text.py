@@ -83,19 +83,21 @@ def open_editor(editor_choice, file_or_folder):
 
 # when listening, hey sae command spoken- begin listening for commands
 
-def main(argv):
-
+# def main(argv):
+def main():
+    
     editor_choice = "code"
     file_or_folder = 'test.txt'
 
     # editor input to open the editor
-    if len(argv) > 1:
-        editor_choice = argv[1]
-        if len(argv) > 2:
-            file_or_folder = argv[2]
+    # if len(argv) > 1:
+    #     editor_choice = argv[1]
+    #     if len(argv) > 2:
+    #         file_or_folder = argv[2]
 
     # selection = input(selection_menu()) # need to make this voice activated
     selection = 0
+
 
     while True:
 
@@ -106,6 +108,7 @@ def main(argv):
             except:
                 # selection = input("Please try again" + selection_menu())
                 print("\nExiting SAE")
+                sys.exit()
         else:
             print("Could not open that editor... Sorry ")
 

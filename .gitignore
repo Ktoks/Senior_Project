@@ -6,3 +6,13 @@ __pycache__/
 docs/
 backup/
 notes/
+.cache
+data/
+hey_sae.logs/
+hey-sae.logs/
+hey_sae/
+hey-sae.epoch
+hey-sae.net.params
+hey-sae.pbtxt
+hey-sae.pb.params
+.gitignore
