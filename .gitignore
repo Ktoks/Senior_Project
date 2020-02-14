@@ -1,9 +1,8 @@
 test.py
-zion_project/
 pictures/
-idea.pdf
+*.pdf
 __pycache__/
-docs/
+docs/*checkpoint*
 backup/
 notes/
 .cache
