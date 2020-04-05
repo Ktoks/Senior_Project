@@ -18,6 +18,30 @@ python_db = {
     "quote" : '"',
     "underscore" : "_",
     "sub" : "[",
+    "end sub" : "]",
     "period" : "."
-    
+}
+
+cpp_db = {
+    "true" : "True",
+    "while true" : "while True",
+    "colon" : ":",
+    "enter" : "\n",
+    "comma" : ",",
+    "common" : ",",
+    "zero" : "0",
+    "one" : "1",
+    "two": "2",
+    "three": "3",
+    "four" : "4",
+    "five" : "5",
+    "six" : "6",
+    "seven" : "7",
+    "eight" : "8",
+    "nine" : "9",
+    "quote" : '"',
+    "underscore" : "_",
+    "sub" : "[",
+    "end sub" : "]",
+    "period" : "."
 }
