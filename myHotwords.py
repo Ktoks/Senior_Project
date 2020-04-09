@@ -1,4 +1,5 @@
-dCommands = {
+Commands = {
+	"heisei": "hey sae",
     "hey sae" : "hey sae",
     "hey say" : "hey sae",
     "hay sae" : "hey sae",
@@ -6,10 +7,7 @@ dCommands = {
     "edit mode" : "edit mode",
     "edit node" : "edit mode",
     "settings mode": "settings mode",
-    "exit mode" : "exit mode"
-}
-
-uCommands = {
+    "exit mode" : "exit mode",
     "quit" : "quit",
     "save" : "save",
     "close" : "close",
@@ -19,5 +17,4 @@ uCommands = {
     "highlight" : "highlight",
     "escape" : "escape",
     "enter" : "escape",
-    
 }

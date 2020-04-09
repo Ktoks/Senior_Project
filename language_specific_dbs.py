@@ -1,4 +1,9 @@
 python_db = {
+    "hey sae" : "hey sae",
+    "hey say" : "hey sae",
+    "hay sae" : "hey sae",
+    "hay say" : "hey sae",
+    "heisei": "hey sae",
     "true" : "True",
     "while true" : "while True",
     "colon" : ":",
@@ -23,10 +28,15 @@ python_db = {
 }
 
 cpp_db = {
+    "hey sae" : "hey sae",
+    "hey say" : "hey sae",
+    "hay sae" : "hey sae",
+    "hay say" : "hey sae",
+    "heisei": "hey sae",
     "true" : "True",
     "while true" : "while True",
     "colon" : ":",
-    "enter" : "\n",
+    "enter" : "\\n",
     "comma" : ",",
     "common" : ",",
     "zero" : "0",
